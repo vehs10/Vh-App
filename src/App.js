@@ -1,7 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import NavBar from './components/NavBar';
+import Card from './components/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -9,14 +11,19 @@ function App() {
 
       <header>
          <NavBar />
-       </header>
-       
+      </header>
 
-       <section className="mt-3">
-         <h1>Pokedex</h1>
+      <section className="mx-auto container">
+       <div className="row"> 
+      <Card name="Charmander" type="Fuego" />
+      <Card name="Bulbasaur" type="Planta" />
+      <Card name="Squirtle" type="Agua" />
+      <Card name="Pikachu" type="Trueno" />
+      <Card name="Pidegeot" type="Volador" />
+      <Card name="Rattata" type="Normal" />
+       </div>
+      </section>
 
-       </section>
-       
     </div>
   );
 }
