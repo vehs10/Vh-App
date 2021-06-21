@@ -22,8 +22,8 @@ function PokeCard(props) {
               <div className="card-body">
                 <h4 className="card-title">#{props.index +1} {props.pokemon}</h4>
                 <p className="card-text text-center"></p>
-                <Button className="mr-2" variant="success" onClick={aumentarContador}> +{" "}</Button>
-                <Button variant="danger" onClick={restarContador}> -{" "} </Button>
+                <Button className="mr-2" variant="success" onClick={aumentarContador}> +</Button>
+                <Button variant="danger" onClick={restarContador}> - </Button>
                 <p className="m-3 font-weight-bold">{`Nivel de tu Pokemon: ${clicks}`}</p>
                 <p className=" m-1 font-weight-light">Nivel Maximo de Pokemon: 5</p>
                 <p className=" m-1 font-weight-light"> + Nivel el precio aumentara</p>
