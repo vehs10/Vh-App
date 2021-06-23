@@ -8,7 +8,7 @@ function ListCard() {
 
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=25&offset=0")
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=27&offset=0")
       .then((response) => response.json())
       .then((response) => {
         setData(response.results);
@@ -20,7 +20,7 @@ function ListCard() {
       {data !== null ? (
         data.map((data, index) => {
           return (
-           <PokeCard pokemon={data.name} index={index} />
+           <PokeCard key={index} pokemon={data.name} index={index} />
           );
         })
       ) : (
