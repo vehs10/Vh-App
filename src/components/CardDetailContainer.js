@@ -7,17 +7,22 @@ function CardDetailContainer() {
   let Pokeurl = `https://pokeapi.co/api/v2/pokemon/1`;
 
   useEffect(() =>{
-    fetch({Pokeurl})
+    fetch(Pokeurl)
     .then((response) => response.json())
     .then((response) =>{
-      Setitem(response.results)
+      Setitem(response)
       console.log(response);
+      console.log(item);
     })
   
   }, [])
     
   return (
-      <CardDetail />
+    <div className="">
+     {item !==  null ?
+     <CardDetail pokemon={item} /> 
+     : <h2>Cargando</h2>}
+   </div>
   );
   
   }

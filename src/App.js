@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ContainerCard from './components/ContainerCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CardDetailContainer from './components/CardDetailContainer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,15 +20,19 @@ function App() {
     <div className="App">
     <Router>
          <NavBar Link={Link}/>
+       
       <section className="container">
 
         <Switch>
           <Route path="/" exact>
             <ContainerCard />
+            
+            
           </Route>
 
           <Route path="/about">
             <About />
+            <CardDetailContainer />
           </Route>
 
           <Route path="/contact">
