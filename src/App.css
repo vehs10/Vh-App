@@ -1,7 +1,12 @@
 *{
   margin: 0 auto;
 }
-
+.site-header{
+  margin-bottom: 4rem;
+}
+.Navbar-img{
+  width:90px;
+}
 
 .searchbar-container {
   display: flex;
