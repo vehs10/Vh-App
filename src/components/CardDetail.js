@@ -3,7 +3,7 @@ import ItemCount from './ItemCount';
 
 const CardDetail = (props) => {
     let url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${props.pokemon.id}.png`;
-    console.log('PROPS', props.pokemon);
+    //console.log('PROPS', props.pokemon);
 
   
     
@@ -15,7 +15,7 @@ const CardDetail = (props) => {
             <div className="col-12 col-lg-6 mt-4">   
                 <h4>Nombre de Pokemon: {props.pokemon.name}</h4>
                 <p><span className="font-weight-bold">Peso de Pokemon:</span> {props.pokemon.weight}</p>
-                <p><span className="font-weight-bold">Descripcion:</span> Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseñ</p>
+                <p><span className="font-weight-bold">Altura:</span> {props.pokemon.height} </p>
                 <p><span className="font-weight-bold">Experiencia Base:</span> {props.pokemon.base_experience}</p>
                 <ItemCount />
             </div>   

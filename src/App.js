@@ -32,11 +32,14 @@ function App() {
 
           <Route path="/about">
             <About />
-            <CardDetailContainer />
           </Route>
 
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/Detail/:id">
+            <CardDetailContainer />
+
           </Route>
         </Switch>
 

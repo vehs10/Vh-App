@@ -4,7 +4,7 @@ import CardDetail from "./CardDetail";
 
 function CardDetailContainer() {
   const [item, Setitem] = useState(null);
-  let Pokeurl = `https://pokeapi.co/api/v2/pokemon/1`;
+  let Pokeurl = `https://pokeapi.co/api/v2/pokemon/4`;
 
   useEffect(() =>{
     fetch(Pokeurl)

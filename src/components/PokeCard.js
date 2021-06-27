@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Card } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 
 function PokeCard(props) {
     //let url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.index +1}.png`;
@@ -10,8 +11,8 @@ function PokeCard(props) {
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={url} />
       <Card.Body>
-        <Card.Title>#{props.index +1} {props.pokemon}</Card.Title>
-        <Button variant="primary">Obtener</Button>      
+        <Card.Title>#{props.index +1 } {props.pokemon}</Card.Title>
+        <Link to={"/Detail/:id"} variant="primary" className="btn btn-primary">Obtener</Link>      
       </Card.Body>
     </Card>
     )
