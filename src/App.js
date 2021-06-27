@@ -37,7 +37,7 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-          <Route path="/Detail/:id">
+          <Route path="/pokemon/:id">
             <CardDetailContainer />
 
           </Route>
