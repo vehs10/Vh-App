@@ -4,6 +4,7 @@ import {Navbar, Form, FormControl, Button, Nav} from 'react-bootstrap'
 
 
 
+
   function NavBar(props) {
     let NavImg =
     "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";
@@ -22,7 +23,7 @@ import {Navbar, Form, FormControl, Button, Nav} from 'react-bootstrap'
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-primary">Search</Button>
+          <Button variant="outline-primary">Search</Button> 
         </Form>
       </Navbar.Collapse>
       </Navbar>

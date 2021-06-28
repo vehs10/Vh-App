@@ -12,7 +12,7 @@ function PokeCard(props) {
       <Card.Img variant="top" src={url} />
       <Card.Body>
         <Card.Title>#{props.index +1 } {props.pokemon}</Card.Title>
-        <Link to={"/pokemon/:id"} variant="primary" className="btn btn-primary">Obtener</Link>      
+        <Link to={`/pokemon/${props.index + 1}`} variant="primary" className="btn btn-primary">Obtener</Link>      
       </Card.Body>
     </Card>
     )

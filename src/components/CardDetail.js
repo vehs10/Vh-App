@@ -14,7 +14,8 @@ const CardDetail = (props) => {
             </div>
             <div className="col-12 col-lg-6 mt-4">   
                 <h4>Nombre de Pokemon: {props.pokemon.name}</h4>
-                <p><span className="font-weight-bold">Peso de Pokemon:</span> {props.pokemon.weight}</p>
+                <p><span className="font-weight-bold">ID:</span> {props.pokemon.id}</p>
+                <p><span className="font-weight-bold">Peso de Pokemon:</span> {props.pokemon.weight}Kg</p>
                 <p><span className="font-weight-bold">Altura:</span> {props.pokemon.height} </p>
                 <p><span className="font-weight-bold">Experiencia Base:</span> {props.pokemon.base_experience}</p>
                 <ItemCount />

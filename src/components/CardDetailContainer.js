@@ -4,7 +4,7 @@ import {useParams} from 'react-router-dom';
 
 
 function CardDetailContainer() {
-  let {id} = useParams;
+  let {id} = useParams();
   const [item, Setitem] = useState(null);
   let Pokeurl = `https://pokeapi.co/api/v2/pokemon/${id}`;
  console.log(Pokeurl);
@@ -22,7 +22,7 @@ function CardDetailContainer() {
   return (
     <div className="">
      {item !==  null ?
-     <CardDetail pokemon={item} /> 
+     <CardDetail  pokemon={item}  /> 
      : <h2>Cargando</h2>}
    </div>
   );
