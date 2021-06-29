@@ -7,14 +7,14 @@ function CardDetailContainer() {
   let {id} = useParams();
   const [item, Setitem] = useState(null);
   let Pokeurl = `https://pokeapi.co/api/v2/pokemon/${id}`;
- console.log(Pokeurl);
+ //console.log(Pokeurl);
   useEffect(() =>{
     fetch(Pokeurl)
     .then((response) => response.json())
     .then((response) =>{
       Setitem(response)
-      console.log(response);
-      console.log(item);
+     // console.log(response);
+     // console.log(item);
     })
   
   }, [])

@@ -6,19 +6,19 @@ import {Button} from 'react-bootstrap'
     const [clicks, setClicks] = React.useState(1);
 
     function aumentarContador(e) {
-        clicks < 5 ?
-            setClicks(clicks + 1) : console.log(e)
+       clicks < 5 ?
+        setClicks(clicks + 1) : console.log(e)
            
     }
 
     function restarContador(e) {
         clicks > 1 ?
-            setClicks(clicks - 1) :
+            setClicks(props.clicks - 1) :
             console.log(e)
     }
 
     function AddToCard(){
-        props.onAdd(setClicks);
+        props.onAdd(props.setClicks);
     }
 
     return ( 

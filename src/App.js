@@ -11,41 +11,39 @@ import {
 } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import {StoreProvider} from "./context/CartContext";
 
 
 
 
 function App() {
   return (
+    <StoreProvider>
     <div className="App">
-    <Router>
-         <NavBar Link={Link}/>
-       
+      <Router>
+       <NavBar Link={Link}/>
       <section className="container">
+          <Switch>
+            <Route path="/" exact>
+              <ContainerCard />
+           </Route>
 
-        <Switch>
-          <Route path="/" exact>
-            <ContainerCard />
-            
-            
-          </Route>
+           <Route path="/about">
+             <About />
+           </Route>
 
-          <Route path="/about">
-            <About />
-          </Route>
+           <Route path="/contact">
+             <Contact />
+           </Route>
 
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/pokemon/:id">
-            <CardDetailContainer />
-
-          </Route>
+           <Route path="/pokemon/:id">
+             <CardDetailContainer />
+           </Route>
         </Switch>
-
       </section>
     </Router> 
     </div>
+    </StoreProvider>
   );
 }
 
