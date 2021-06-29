@@ -3,18 +3,18 @@ import {Button} from 'react-bootstrap'
 
  function ItemCount(props) {
 
-    const [clicks, setClicks] = React.useState(0);
+    const [clicks, setClicks] = React.useState(1);
 
     function aumentarContador(e) {
         clicks < 5 ?
-            setClicks(clicks + 1) : console.log(clicks)
+            setClicks(clicks + 1) : console.log(e)
            
     }
 
     function restarContador(e) {
-        clicks > 0 ?
+        clicks > 1 ?
             setClicks(clicks - 1) :
-            console.log(clicks)
+            console.log(e)
     }
 
     function AddToCard(){

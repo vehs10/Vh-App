@@ -8,6 +8,7 @@ const CardDetail = (props) => {
 
    const onAdd = (value) =>{
        setCantidad(value);
+      
    }
 
     return (
@@ -26,11 +27,8 @@ const CardDetail = (props) => {
                  ):(
                    <button className="btn btn-success">Escoger Pokemon</button>
                  )} 
-            </div>
-            
+            </div>      
      </div>
-
-
     );
 
 }
