@@ -24,7 +24,7 @@ function ListCard() {
           );
         })
       ) : (
-        <h3>Cargada</h3>
+        <h3>Cargando...</h3>
       )}
     </div>
   );

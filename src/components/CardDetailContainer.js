@@ -23,7 +23,7 @@ function CardDetailContainer() {
     <div className="">
      {item !==  null ?
      <CardDetail  pokemon={item}  /> 
-     : <h2>Cargando</h2>}
+     : <h2>Cargando...</h2>}
    </div>
   );
   
