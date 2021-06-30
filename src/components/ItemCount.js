@@ -13,7 +13,7 @@ import {Button} from 'react-bootstrap'
 
     function restarContador(e) {
         clicks > 1 ?
-            setClicks(props.clicks - 1) :
+            setClicks(clicks - 1) :
             console.log(e)
     }
 
