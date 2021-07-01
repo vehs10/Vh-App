@@ -6,7 +6,7 @@ import {Button} from 'react-bootstrap'
     const [clicks, setClicks] = React.useState(1);
 
     function aumentarContador(e) {
-       clicks < 5 ?
+       clicks < props.nivelMax ?
         setClicks(clicks + 1) : console.log(e)
            
     }
@@ -18,7 +18,7 @@ import {Button} from 'react-bootstrap'
     }
 
     function AddToCard(){
-        props.onAdd(props.setClicks);
+        props.onAdd(clicks);
     }
 
     return ( 

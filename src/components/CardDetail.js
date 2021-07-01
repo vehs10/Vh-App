@@ -25,7 +25,7 @@ const CardDetail = (props) => {
                 <p><span className="font-weight-bold">Altura:</span> {props.pokemon.height} </p>
                 <p><span className="font-weight-bold">Experiencia Base:</span> {props.pokemon.base_experience}</p>
                 {cantidad === 0?(
-                   <ItemCount  onAdd={onAdd}/>
+                   <ItemCount nivelMax={5} onAdd={onAdd}/>
                  ):(
                    <button className="btn btn-success mb-2">Escoger Pokemon</button>
                  )} 
