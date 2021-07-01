@@ -8,3 +8,12 @@
   width:90px;
 }
 
+.Card-style{
+  box-shadow: 0px 4px 20px rgba(46, 45, 45, 0.25);
+  border-color: #FFFFFF;
+  background: #FFFFFF;
+}
+.Card-style:hover{
+ transform: scale(1.1);
+ transition: all 1.3s;
+}

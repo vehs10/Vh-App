@@ -21,6 +21,7 @@ function CardDetailContainer() {
     
   return (
     <div className="">
+      <h3 className="text-center p-3">Detalle del Pokemon</h3>
      {item !==  null ?
      <CardDetail  pokemon={item}  /> 
      : <h2>Cargando...</h2>}

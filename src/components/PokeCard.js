@@ -8,7 +8,7 @@ function PokeCard(props) {
   
 
     return (   
-      <Card className="mt-3" style={{ width: '18rem' }}>
+      <Card className="mt-3 mb-3 Card-style" style={{ width: '18rem' }}>
       <Card.Img variant="top" src={url} />
       <Card.Body>
         <Card.Title>#{props.index +1 } {props.pokemon}</Card.Title>

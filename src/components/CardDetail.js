@@ -14,7 +14,7 @@ const CardDetail = (props) => {
    }
 
     return (
-        <div className="Container row border border-info bg-dark text-white">
+        <div className="Container row border border-info bg-dark text-white mt-5 mb-4 p-4">
             <div className=" col-10 col-lg-4"> 
                 <img className="img-fluid" src={url} />
             </div>

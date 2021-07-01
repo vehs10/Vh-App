@@ -9,9 +9,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Footer from "./components/Footer"
 import {StoreProvider} from "./context/CartContext";
+
 
 
 
@@ -41,6 +43,7 @@ function App() {
            </Route>
         </Switch>
       </section>
+      <Footer />
     </Router> 
     </div>
     </StoreProvider>

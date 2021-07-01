@@ -1,6 +1,7 @@
 
 import React from 'react'
 import {Navbar, Form, FormControl, Button, Nav} from 'react-bootstrap'
+import CarTeam from './CarTeam';
 
 
 
@@ -22,8 +23,7 @@ import {Navbar, Form, FormControl, Button, Nav} from 'react-bootstrap'
           
         </Nav>
         <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-primary">Search</Button> 
+          <CarTeam />
         </Form>
       </Navbar.Collapse>
       </Navbar>
