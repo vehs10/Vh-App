@@ -14,10 +14,6 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer"
 import {StoreProvider} from "./context/CartContext";
 
-
-
-
-
 function App() {
   return (
     <StoreProvider>

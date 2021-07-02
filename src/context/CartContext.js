@@ -3,7 +3,7 @@ import React, {createContext, useState, useContext} from 'react';
 
 const StoreContext = createContext();
 
-const useCardContext = () => useContext(StoreContext);
+const useCartContext = () => useContext(StoreContext);
 
 export const StoreProvider = ({children}) => {
     const [pokemon, setPokemon] = useState([])
@@ -20,4 +20,4 @@ export const StoreProvider = ({children}) => {
        </StoreContext.Provider>
     )
 }
-export default useCardContext
+export default useCartContext

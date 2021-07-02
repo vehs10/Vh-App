@@ -1,12 +1,12 @@
 import React from 'react';
 import ItemCount from './ItemCount';
-import useCardContext from '../context/CartContext';
+import useCartContext from '../context/CartContext';
 
 const CardDetail = (props) => {
     let url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${props.pokemon.id}.png`;
     //console.log('PROPS', props.pokemon);
    const [cantidad, setCantidad] = React.useState(0);
-   const addItem = useCardContext().addItem
+   const addItem = useCartContext().addItem
 
    const onAdd = (cant) =>{
        setCantidad(cant);
