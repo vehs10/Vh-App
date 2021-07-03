@@ -13,16 +13,20 @@ function Cart() {
       }
   }, []);
 
-    return (
-        <div>    
-            <h4>Equipo Elegido</h4>  
-            {Equipo !==  null ?
-          <CardDetail  pokemon={item}  /> 
-            : <h2>Cargando...</h2>}
-        </div>
+    return (     
+ <div>
+      {Equipo !== null ? (
+        Equipo.map((data) => {
+            console.log('aca', data);
+           <p>{data.pokemon}</p>
+          
+        })
+      ) : (
+        <h3>Cargando...</h3>
+      )}
+ </div>
     );
                
    
 }
-
 export default Cart;

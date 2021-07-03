@@ -1,5 +1,6 @@
 import React from "react";
 import {Modal, Button} from "react-bootstrap";
+import Cart from "./Cart"
 
 function CarTeam() {
 
@@ -18,7 +19,9 @@ function CarTeam() {
         <Modal.Header closeButton>
           <Modal.Title>Tu Equipo Elegido</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Pokemones Elegidos!</Modal.Body>
+        <Modal.Body>
+          <Cart />
+          </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Cerrar
