@@ -27,7 +27,7 @@ const CardDetail = (props) => {
                 {cantidad === 0?(
                    <ItemCount nivelMax={5} onAdd={onAdd}/>
                  ):(
-                   <button className="btn btn-success mb-2">Escoger Pokemon</button>
+                   <h6 className="font-weight-bold  aqua">Tu Pokemon Fue enviado a "Tu Equipo"</h6>
                  )} 
             </div>      
      </div>

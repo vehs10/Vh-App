@@ -12,7 +12,7 @@ function CarTeam() {
   return (
     <div>
       <Button variant="primary" onClick={handleShow}>
-       Equipo Pokemon
+          Tu Equipo
       </Button>
 
       <Modal show={show} onHide={handleClose}>

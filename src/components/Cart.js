@@ -17,8 +17,7 @@ function Cart() {
  <div>
       {Equipo !== null ? (
         Equipo.map((data) => {
-            console.log('aca', data);
-           <p>{data.pokemon}</p>
+         return (<p className="font-weight-bold">{data.Pokemon}  Nivel: {data.Nivel}</p>)
           
         })
       ) : (
