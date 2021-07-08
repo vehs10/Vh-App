@@ -1,5 +1,5 @@
 import React from 'react'
-import ContainerFirebase from '../firebase/ContainerFirebase'
+ //import ContainerFirebase from '../firebase/ContainerFirebase'
 
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
         <div className="pt-4 mt-4 container text-center">
             <h1>About</h1>
             <p>Todo sobre nosotros</p>
-            <ContainerFirebase />
+           
         </div>
     )
 }
