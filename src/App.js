@@ -18,7 +18,6 @@ function App() {
           <NavBar Link={Link} />
           <section className="container">
             <Switch>
-              
               <Route path="/" exact>
                 <ContainerCard />
               </Route>
@@ -37,9 +36,7 @@ function App() {
 
               <Route path="/Enviado">
                 <TeamEnviado />
-
               </Route>
-
             </Switch>
           </section>
           <Footer />

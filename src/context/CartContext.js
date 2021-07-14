@@ -11,11 +11,14 @@ export const StoreProvider = ({ children }) => {
   const addItem = (id, item, quantity) => {
     setPokemon([...pokemon, { id: id, Pokemon: item, Nivel: quantity }]);
   };
-
+  
+  const DeleteTeam = () => {
+    setPokemon([]);
+  };
 
   
   return (
-    <StoreContext.Provider value={{ pokemon, addItem }}>
+    <StoreContext.Provider value={{ pokemon, addItem, DeleteTeam }}>
       {" "}
       {console.log(pokemon)} {children}
     </StoreContext.Provider>
