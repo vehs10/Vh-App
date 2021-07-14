@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import useCartContext from '../context/CartContext'
+import { Button} from "react-bootstrap";
 
 function Cart() {
   const {pokemon} = useCartContext();
   const [Equipo, setEquipo] = useState(null);
 
+ 
   useEffect(() => {
       if(pokemon){
           setEquipo(pokemon)
@@ -13,11 +15,17 @@ function Cart() {
       }
   }, []);
 
+
+
     return (     
  <div>
       {Equipo !== null ? (
         Equipo.map((data) => {
-         return (<p className="font-weight-bold">{data.Pokemon}  Nivel: {data.Nivel}</p>)
+         return (
+        <div>
+         <p className="font-weight-bold">{data.Pokemon}  Nivel: {data.Nivel}</p>
+        </div>
+         )
           
         })
       ) : (

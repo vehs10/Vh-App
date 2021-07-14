@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { getFirestore } from './Firebase'
 
@@ -53,4 +52,3 @@ function ContainerFirebase() {
 }
 
 export default ContainerFirebase
-

@@ -1,5 +1,6 @@
 import React from "react";
 import {Modal, Button} from "react-bootstrap";
+import {Link} from 'react-router-dom'
 import Cart from "./Cart"
 
 function CarTeam() {
@@ -26,9 +27,7 @@ function CarTeam() {
           <Button variant="secondary" onClick={handleClose}>
             Cerrar
           </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Confirmar Equipo
-          </Button>
+         <Link to="/contact" onClick={handleClose} className="btn btn-primary">Confirmar Equipo</Link>
         </Modal.Footer>
       </Modal>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemCount from './ItemCount';
 import useCartContext from '../context/CartContext';
+import {Link} from 'react-router-dom'
 
 const CardDetail = (props) => {
     let url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${props.pokemon.id}.png`;
@@ -10,7 +11,7 @@ const CardDetail = (props) => {
 
    const onAdd = (cant) =>{
        setCantidad(cant);
-       addItem(props.pokemon.name, cant);
+       addItem(props.pokemon.id, props.pokemon.name, cant);
    }
 
     return (
@@ -27,7 +28,10 @@ const CardDetail = (props) => {
                 {cantidad === 0?(
                    <ItemCount nivelMax={5} onAdd={onAdd}/>
                  ):(
+                    <div>
                    <h6 className="font-weight-bold  aqua">Tu Pokemon Fue enviado a "Tu Equipo"</h6>
+                   <Link to="/" className="btn btn-info m-3">Volver al Home</Link>
+                   </div>
                  )} 
             </div>      
      </div>

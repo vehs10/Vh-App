@@ -1,23 +1,24 @@
-import React, {createContext, useState, useContext} from 'react';
-
+import React, { createContext, useState, useContext } from "react";
 
 const StoreContext = createContext();
 
 const useCartContext = () => useContext(StoreContext);
 
-export const StoreProvider = ({children}) => {
-    const [pokemon, setPokemon] = useState([])
+export const StoreProvider = ({ children }) => {
+  const [pokemon, setPokemon] = useState([]);
+ 
 
-    const addItem = (item, quantity) =>{
-        setPokemon([...pokemon,{'Pokemon': item, 'Nivel': quantity}]);
-    }
+  const addItem = (id, item, quantity) => {
+    setPokemon([...pokemon, { id: id, Pokemon: item, Nivel: quantity }]);
+  };
 
-    return(
-       <StoreContext.Provider value={{pokemon, addItem}}>
-           {console.log(pokemon)}
-           {children}
 
-       </StoreContext.Provider>
-    )
-}
-export default useCartContext
+  
+  return (
+    <StoreContext.Provider value={{ pokemon, addItem }}>
+      {" "}
+      {console.log(pokemon)} {children}
+    </StoreContext.Provider>
+  );
+};
+export default useCartContext;
